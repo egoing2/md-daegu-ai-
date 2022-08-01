@@ -2,7 +2,7 @@ import streamlit as st
 
 view = [100, 78, 4, 30]
 
-st.write('# View List')
+st.write('# View List!!')
 
 st.write('## raw data')
 view
