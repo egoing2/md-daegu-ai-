@@ -29,6 +29,11 @@ st.table(topics)
 
 import pandas as pd
 topics_df = pd.DataFrame.from_dict(topics)
-topics_df
 
-st.bar_chart(topics_df['view'])
+tab1, tab2, tab3 = st.tabs(['table', 'bar chart', 'line chart'])
+with tab1:
+    topics_df
+with tab2:
+    st.bar_chart(topics_df['view'])
+with tab3:
+    st.line_chart(topics_df['view'])
